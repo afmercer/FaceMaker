@@ -15,7 +15,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="550dp"
+            android:layout_height="600dp"
             android:orientation="vertical">
 
             <edu.up.cs301.mercer20.facemaker.FaceView
@@ -60,7 +60,8 @@
                     android:id="@+id/seekBar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:max="255" />
             </LinearLayout>
 
             <LinearLayout
@@ -83,7 +84,8 @@
                     android:id="@+id/seekBar2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:max="255" />
             </LinearLayout>
 
             <LinearLayout
@@ -106,7 +108,8 @@
                     android:id="@+id/seekBar3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:max="255" />
             </LinearLayout>
 
         </LinearLayout>
@@ -134,9 +137,9 @@
                     android:textSize="20sp" />
 
                 <Spinner
-                    android:id="@+id/spinner"
+                    android:id="@+id/spinnerHairStyles"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="match_parent" />
             </LinearLayout>
 
             <LinearLayout
