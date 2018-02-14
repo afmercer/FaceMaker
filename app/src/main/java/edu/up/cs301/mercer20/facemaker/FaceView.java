@@ -4,10 +4,9 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
-import android.hardware.camera2.params.Face;
 import android.util.AttributeSet;
-import android.view.SurfaceHolder;
 import android.view.SurfaceView;
+import java.util.Random;
 
 /**
  * Created by AdamMercer on 2/10/18.
@@ -18,6 +17,7 @@ public class FaceView extends SurfaceView {
     public FaceView(Context context) {
         super(context);
         setWillNotDraw(false);
+
     }
 
     public FaceView(Context context, AttributeSet attrs) {
@@ -30,9 +30,20 @@ public class FaceView extends SurfaceView {
         setWillNotDraw(false);
     }
 
+    private Face myFace = null;
+
+    public void getFace(Face initFace) {
+        myFace = initFace;
+    }
+
     @Override
     public void onDraw(Canvas canvas) {
+        int width = this.getWidth();
+        int height = this.getHeight();
+        Paint background = new Paint();
+        background.setColor(Color.WHITE);
+        canvas.drawRect(0.0f, 0.0f, width, height, background);
 
-
+        myFace.onDraw(canvas);
     }
 }

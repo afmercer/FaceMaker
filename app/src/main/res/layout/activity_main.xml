@@ -19,7 +19,7 @@
             android:orientation="vertical">
 
             <edu.up.cs301.mercer20.facemaker.FaceView
-                android:id="@+id/surfaceView3"
+                android:id="@+id/surfaceFaceView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1" />
